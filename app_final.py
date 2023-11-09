@@ -62,8 +62,7 @@ def batch_load_sql(query: str) -> pd.DataFrame:
 
     CHUNKSIZE = 200000
     engine = create_engine(
-        "postgresql://robot-startml-ro:pheiph0hahj1Vaif@"
-        "postgres.lab.karpov.courses:6432/startml"
+        "----"
     )
     conn = engine.connect().execution_options(stream_results=True)
     chunks = []
